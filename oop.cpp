@@ -7,25 +7,21 @@ class Car {
         int year;
         string brand;
         string model;
+        Car(int x, string y, string z) {
+            year = x;
+            brand = y;
+            model = z;
+        }
 };
 
 int main() {
 
-    Car car1;
+    Car car1(1, "Audi", "KSJ23");
 
-    car1.year = 1;
-    car1.brand = "Audi";
-    car1.model = "KSJ23";
+    Car car2(342, "Sujuki", "Gyt%^");
 
-
-    Car car2;
-
-    car2.year = 342;
-    car2.brand = "Sujuki";
-    car2.model = "Gyt%^";
-
-    cout << car1.year << " " << car1.brand << "" << car1.model <<endl;
-    cout << car2.year << " " << car2.brand << "" << car2.model <<endl;
+    cout << car1.year << " " << car1.brand << " " << car1.model <<endl;
+    cout << car2.year << " " << car2.brand << " " << car2.model <<endl;
     return 0;
 }
 
