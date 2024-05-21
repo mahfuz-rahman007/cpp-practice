@@ -5,15 +5,14 @@ using namespace std;
 int main() {
     
 
-    string firstName = "mahfuzur";
-
-    string lastName = "Rahman";
+    string fullName;
 
 
-    cout << firstName + lastName << endl;
+    cout << "Enter Your Full Name" << endl;
 
-    cout << firstName.append(lastName) << endl;
+    getline(cin, fullName);
 
+    cout << fullName << endl;
 
 
     return 0;
