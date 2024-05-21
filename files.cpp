@@ -3,11 +3,17 @@
 using namespace std;
 
 int main() {
-    ofstream MyFile("mylife.txt");
+    string mytext;
 
-    MyFile << "Hello I am A Software Developer \n I am Working At Bibtyte Technology";
+    ifstream myFile("mylife.txt");
 
-    MyFile.close();
+    while (getline(myFile, mytext))
+    {
+        cout << mytext;
+    }
+
+
+    myFile.close();
 
     return 0;
 }
