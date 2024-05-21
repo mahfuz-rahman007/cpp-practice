@@ -1,16 +1,19 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
 int main() {
-    float x,y,sum;
-    std::cout << "enter number one" <<std::endl;
-    std::cin >> x;
     
-    std::cout << "enter number two" <<std::endl;
-    std::cin >> y;
 
-    sum = x+y;
+    string firstName = "mahfuzur";
 
-    std::cout << "addition is" <<  sum  << std::endl;
+    string lastName = "Rahman";
+
+
+    cout << firstName + lastName << endl;
+
+    cout << firstName.append(lastName) << endl;
+
 
 
     return 0;
