@@ -1,8 +1,17 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello, World! How Are You I hope you are doing okey" << std::endl;
-    std::cout << "My Name is mahfuz" << std::endl;
+    float x,y,sum;
+    std::cout << "enter number one" <<std::endl;
+    std::cin >> x;
+    
+    std::cout << "enter number two" <<std::endl;
+    std::cin >> y;
+
+    sum = x+y;
+
+    std::cout << "addition is" <<  sum  << std::endl;
+
 
     return 0;
 }
